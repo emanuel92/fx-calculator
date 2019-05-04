@@ -11,9 +11,9 @@ document.querySelectorAll('select').forEach(element => {
 });
 
 document.querySelector('button').addEventListener('click', () => {
-    const inputValue = document.querySelector('[name="input-value"]').nodeValue;
-    const inputCurrency = document.querySelector('[name="input-currency"]').nodeValue;
-    const outputCurrency = document.querySelector('[name="output-currency"]').nodeValue;
+    const inputValue = document.querySelector('[name="input-value"]').value;
+    const inputCurrency = document.querySelector('[name="input-currency"]').value;
+    const outputCurrency = document.querySelector('[name="output-currency"]').value;
 
     convert(inputValue, inputCurrency, outputCurrency)
         .then((outputValue) => {
